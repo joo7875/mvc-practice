@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Joo_website.Models.PetShop>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <style>
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn {
+            font-size: 15pt;
+        }
+
+        body {
+            text-align: center;
+            background-color: #F1F1F1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <br />
+    <div style="font-size: 20pt">
+        @ViewBag.Welcome <br />
+        Welcome to our Pet Shop! <br /><br />
+    </div>
+    <div style="font-size: 16pt">
+        Are you ready to shop for your lovely pets? <br />
+        If yes, select your type of pet below. <br /><br />
+    </div>
+
+    <div class="btn btn-success">
+        <strong>@Html.ActionLink("Dog", "DogPage")</strong>
+    </div>
+    <div class="btn btn-success">
+        <strong>@Html.ActionLink("Cat", "CatPage")</strong>
+    </div>
+
+</body>
+</html>
