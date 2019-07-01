@@ -11,7 +11,12 @@ namespace Joo_website.Models
         public string category { get; set; }
         public int productId { get; set; }
         public string productName { get; set; }
+        public int price { get; set; }
         public int weeklyBest { get; set; }
+
+        //Details
+        public string productImage { get; set; }
+        public string description { get; set; }
     }
 
     public class Cat : PetShop { }
