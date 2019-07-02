@@ -28,13 +28,13 @@ namespace Joo_website.Controllers
                             new PetShop() { category = "dog", productId = 5, productName = "Doggy Nutritional Food 3kg", price = 15, weeklyBest = 4 },
                             new PetShop() { category = "dog", productId = 6, productName = "Chewy Bone", price = 8, weeklyBest = 1 },
                             new PetShop() { category = "dog", productId = 7, productName = "Fruity Medicine", price = 20, weeklyBest = 7 },
-                            new PetShop() { category = "cat", productId = 1, productName = "Cat Food 6kg", price = 22, weeklyBest = 6 },
-                            new PetShop() { category = "cat", productId = 2, productName = "Chewing Gum", price = 5, weeklyBest = 2 },
-                            new PetShop() { category = "cat", productId = 3, productName = "Fish&Vege for Cat", price = 10, weeklyBest = 3 },
-                            new PetShop() { category = "cat", productId = 4, productName = "Kitten Ball", price = 3, weeklyBest = 5 },
-                            new PetShop() { category = "cat", productId = 5, productName = "Cat Nutritional Food 3kg", price = 15, weeklyBest = 4 },
-                            new PetShop() { category = "cat", productId = 6, productName = "Chewy Bone", price = 8, weeklyBest = 1 },
-                            new PetShop() { category = "cat", productId = 7, productName = "Fruity Medicine", price = 20, weeklyBest = 7 }
+                            new PetShop() { category = "cat", productId = 8, productName = "Cat Food 6kg", price = 22, weeklyBest = 6 },
+                            new PetShop() { category = "cat", productId = 9, productName = "Chewing Gum", price = 5, weeklyBest = 2 },
+                            new PetShop() { category = "cat", productId = 10, productName = "Fish&Vege for Cat", price = 10, weeklyBest = 3 },
+                            new PetShop() { category = "cat", productId = 11, productName = "Kitten Ball", price = 3, weeklyBest = 5 },
+                            new PetShop() { category = "cat", productId = 12, productName = "Cat Nutritional Food 3kg", price = 15, weeklyBest = 4 },
+                            new PetShop() { category = "cat", productId = 13, productName = "Chewy Bone", price = 8, weeklyBest = 1 },
+                            new PetShop() { category = "cat", productId = 14, productName = "Fruity Medicine", price = 20, weeklyBest = 7 }
             };
 
             if (string.IsNullOrEmpty(petType))
