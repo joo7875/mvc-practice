@@ -1,5 +1,4 @@
-﻿@model IEnumerable<Joo_website.Models.PetShop>
-
+﻿
 @{
     Layout = null;
 }
@@ -8,18 +7,56 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/Content/Style.css" rel="stylesheet" />
     <title>Details</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+        img {
+            width: 500px;
+            height: auto;
+        }
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+
 </head>
 <body>
-    <div>
-        @foreach (var item in Model)
-        {
-            if (item.category == "dog")
-            { 
-                @Html.DisplayFor(modelItem => item.description)
-            }
-        }
+    <div class="navbar navbar-inverse" role="navigation">
+        <a class="navbar-brand" style="color:white;">PET SHOP</a>
+    </div>
+    <h2 style="text-align: center"><strong>Description</strong></h2>
+    <br /><br />
+    <p>
+        <span class="btn btn-success">
+            <strong>@Html.ActionLink("Home", "Index")</strong>
+        </span>
+        <span class="btn btn-success">
+            <strong>@Html.ActionLink("Check Dog Items", "DogPage")</strong>
+        </span>
+        <span class="btn btn-success">
+            <strong>@Html.ActionLink("Check Cat Items", "CatPage")</strong>
+        </span>
+    </p>
+    <br />
+    <div class="container">
+        @*<img src="/Content/Images/DogChewingBone.jpg" />*@
+        @*<img src="/Content/Images/1.jpg" />*@
+
+        <img src="@ViewBag.Image" />
+        <br /><br />
+        <p>
+            <strong>@ViewBag.description</strong>
+        </p>
+
+
     </div>
 </body>
 </html>
