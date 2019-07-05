@@ -54,6 +54,9 @@ namespace Joo_website.Controllers
                 }
             }
 
+            // Title Name
+            ViewBag.petType = petType;
+
             return View(retList);
         }
 
