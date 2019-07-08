@@ -34,16 +34,16 @@
                 <strong>@Html.ActionLink("Home", "Index")</strong>
             </span>
 
-            @if (ViewBag.petType == "dog")
+            @if (ViewBag.petType == "Dog")
             {
                 <span class="btn btn-success">
-                    <strong>@Html.ActionLink("Check Cat Items", "PetPage?pettype=cat")</strong>
+                    <strong>@Html.ActionLink("Check Cat Items", "PetPage", new { petType = "Cat" })</strong>
                 </span>
             }
-            else if (ViewBag.petType == "cat")
+            else if (ViewBag.petType == "Cat")
             {
                 <span class="btn btn-success">
-                    <strong>@Html.ActionLink("Check Dog Items", "PetPage?pettype=dog")</strong>
+                    <strong>@Html.ActionLink("Check Dog Items", "PetPage", new { petType = "Dog" })</strong>
                 </span>
             }
         </p>
@@ -88,7 +88,7 @@
                     </td>
                     <td>
                         @*@Html.ActionLink("Edit", "Edit", new { id = item.productId }) |*@
-                        @Html.ActionLink("Details", "Details", new { id = item.productId })
+                        @Html.ActionLink("Details", "Details", new { id = item.productImage })
                         @*@Html.ActionLink("Delete", "Delete", new { id = item.productId })*@
                     </td>
                 </tr>

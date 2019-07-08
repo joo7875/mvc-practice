@@ -46,10 +46,10 @@
     </div>
 
     <div class="btn btn-success">
-        <strong>@Html.ActionLink("Dog", "PetPage?pettype=dog")</strong>
+        <strong>@Html.ActionLink("Dog", "PetPage", new { petType = "Dog" })</strong>
     </div>
     <div class="btn btn-success">
-        <strong>@Html.ActionLink("Cat", "PetPage?pettype=cat")</strong>
+        <strong>@Html.ActionLink("Cat", "PetPage", new { petType = "Cat" })</strong>
     </div>
 
 </body>
